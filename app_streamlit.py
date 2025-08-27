@@ -32,7 +32,7 @@ ax.bar(df['age'], df['annuity_income'], bottom=df['age_pension'], label="Deferre
 ax.bar(df['age'], df['abp_income'], bottom=df['age_pension']+df['annuity_income'], label="Account-based pension")
 ax.axhline(target_income, linestyle='--')
 
-leg = ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.15), ncol=3, frameon=False)
+leg = ax.legend(loc='upper right', bbox_to_anchor=(0.5, -0.15), ncol=3, frameon=False)
 fig.subplots_adjust(bottom=0.25) 
 
 # Survival markers
