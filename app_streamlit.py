@@ -61,6 +61,7 @@ fig2, ax2 = plt.subplots(figsize=(7,3))
 ax2.plot(df['age'], df['abp_balance_end'])
 ax2.set_xlabel("Age")
 ax2.set_ylabel("ABP balance at year end ($ real)")
+ax2.yaxis.set_major_formatter(mtick.StrMethodFormatter('${x:,.0f}'))
 st.pyplot(fig2, use_container_width=False)
 
 st.dataframe(df, use_container_width=True)
