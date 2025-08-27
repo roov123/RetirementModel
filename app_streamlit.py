@@ -35,9 +35,9 @@ ax.axhline(target_income, linestyle='--')
 # Survival markers
 percs = survival_percentile_ages(age0=retirement_age, sex=sex, percentiles=(0.5,0.25), max_age=df['age'].max())
 if percs.get(0.5):
-    ax.axvline(percs[0.5], linestyle=':', linewidth=1)
+    ax.axvline(percs[0.5], linestyle=':', linewidth=1,color='red')
 if percs.get(0.25):
-    ax.axvline(percs[0.25], linestyle=':', linewidth=1)
+    ax.axvline(percs[0.25], linestyle=':', linewidth=1,color='red')
 
 ax.set_xlabel("Age")
 ax.set_ylabel("Annual income ($ real)")
