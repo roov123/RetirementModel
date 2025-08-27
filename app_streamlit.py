@@ -2,6 +2,8 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.ticker as mtick
+
 from retirement_model import simulate_retirement, survival_percentile_ages
 
 st.set_page_config(page_title="Retirement Income Explorer (Python)", layout="wide")
