@@ -26,7 +26,7 @@ st.title("Retirement Income by Age")
 st.caption(f"Annuity payout rate: {ann_rate:.2%} of premium per year (real).")
 
 # Stacked bars of income components
-fig, ax = plt.subplots(figsize=(12,5))
+fig, ax = plt.subplots(figsize=(7,3))
 ax.bar(df['age'], df['age_pension'], label="Age Pension")
 ax.bar(df['age'], df['annuity_income'], bottom=df['age_pension'], label="Deferred lifetime annuity")
 ax.bar(df['age'], df['abp_income'], bottom=df['age_pension']+df['annuity_income'], label="Account-based pension")
