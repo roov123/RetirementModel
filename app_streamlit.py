@@ -32,8 +32,10 @@ ax.bar(df['age'], df['annuity_income'], bottom=df['age_pension'], label="Deferre
 ax.bar(df['age'], df['abp_income'], bottom=df['age_pension']+df['annuity_income'], label="Account-based pension")
 ax.axhline(target_income, linestyle='--')
 
-leg = ax.legend(loc='upper right', bbox_to_anchor=(0.5, -0.15), ncol=3, frameon=False)
-fig.subplots_adjust(bottom=0.25) 
+
+leg = ax.legend(loc='upper right', bbox_to_anchor=(1.02, 0.5), borderaxespad=0.)
+fig.tight_layout()
+
 
 # Survival markers
 percs = survival_percentile_ages(age0=retirement_age, sex=sex, percentiles=(0.5,0.25), max_age=df['age'].max())
