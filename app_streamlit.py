@@ -33,8 +33,8 @@ ax.bar(df['age'], df['abp_income'], bottom=df['age_pension']+df['annuity_income'
 ax.axhline(target_income, linestyle='--')
 
 
-leg = ax.legend(loc='upper right', bbox_to_anchor=(0.95, 0.95), borderaxespad=0.)
-fig.tight_layout()
+
+
 
 
 # Survival markers
@@ -46,7 +46,9 @@ if percs.get(0.25):
 
 ax.set_xlabel("Age")
 ax.set_ylabel("Annual income ($ real)")
-ax.legend(loc="upper right")
+ax.legend(loc='upper right', bbox_to_anchor=(0.95, 0.95), borderaxespad=0.)
+#ax.legend(loc="upper right")
+fig.tight_layout()
 
 st.pyplot(fig, use_container_width=False)
 
