@@ -33,7 +33,7 @@ ax.bar(df['age'], df['abp_income'], bottom=df['age_pension']+df['annuity_income'
 ax.axhline(target_income, linestyle='--')
 
 
-leg = ax.legend(loc='upper right', bbox_to_anchor=(1.02, 0.5), borderaxespad=0.)
+leg = ax.legend(loc='upper right', bbox_to_anchor=(0.95, 0.5), borderaxespad=0.)
 fig.tight_layout()
 
 
