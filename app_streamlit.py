@@ -31,6 +31,7 @@ ax.bar(df['age'], df['age_pension'], label="Age Pension")
 ax.bar(df['age'], df['annuity_income'], bottom=df['age_pension'], label="Deferred lifetime annuity")
 ax.bar(df['age'], df['abp_income'], bottom=df['age_pension']+df['annuity_income'], label="Account-based pension")
 ax.axhline(target_income, linestyle='--')
+ax.yaxis.set_major_formatter(mtick.StrMethodFormatter('${x:,.0f}'))
 
 
 
