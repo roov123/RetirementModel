@@ -42,7 +42,9 @@ if percs.get(0.25):
 ax.set_xlabel("Age")
 ax.set_ylabel("Annual income ($ real)")
 ax.legend(loc="upper right")
-st.pyplot(fig)
+
+st.pyplot(fig, use_container_width=False)
+
 
 # ABP balance plot
 fig2, ax2 = plt.subplots(figsize=(7,3))
