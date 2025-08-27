@@ -46,7 +46,7 @@ if percs.get(0.25):
 
 ax.set_xlabel("Age")
 ax.set_ylabel("Annual income ($ real)")
-ax.legend(loc='upper right', bbox_to_anchor=(1.25, 1.0), borderaxespad=0.)
+ax.legend(loc='upper right', bbox_to_anchor=(1.5, 1.0), borderaxespad=0.)
 #ax.legend(loc="upper right")
 #fig.tight_layout()
 
