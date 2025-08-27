@@ -45,7 +45,7 @@ ax.legend(loc="upper right")
 st.pyplot(fig)
 
 # ABP balance plot
-fig2, ax2 = plt.subplots(figsize=(12,4))
+fig2, ax2 = plt.subplots(figsize=(7,3))
 ax2.plot(df['age'], df['abp_balance_end'])
 ax2.set_xlabel("Age")
 ax2.set_ylabel("ABP balance at year end ($ real)")
