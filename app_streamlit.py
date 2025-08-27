@@ -48,7 +48,7 @@ ax.set_xlabel("Age")
 ax.set_ylabel("Annual income ($ real)")
 ax.legend(loc='upper right', bbox_to_anchor=(0.95, 0.95), borderaxespad=0.)
 #ax.legend(loc="upper right")
-fig.tight_layout()
+#fig.tight_layout()
 
 st.pyplot(fig, use_container_width=False)
 
