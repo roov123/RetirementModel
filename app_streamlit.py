@@ -43,9 +43,9 @@ ax.yaxis.set_major_formatter(mtick.StrMethodFormatter('${x:,.0f}'))
 # Survival markers
 percs = survival_percentile_ages(age0=retirement_age, sex=sex, percentiles=(0.5,0.25), max_age=df['age'].max())
 if percs.get(0.5):
-    ax.axvline(percs[0.5], linestyle=':', linewidth=1,color='red')
+    ax.axvline(percs[0.5], linestyle=':', linewidth=1.5,color='red')
 if percs.get(0.25):
-    ax.axvline(percs[0.25], linestyle=':', linewidth=1,color='red')
+    ax.axvline(percs[0.25], linestyle=':', linewidth=1.5,color='red')
 
 ax.set_xlabel("Age")
 ax.set_ylabel("Annual income ($ real)")
@@ -64,4 +64,4 @@ ax2.set_ylabel("ABP balance at year end ($ real)")
 ax2.yaxis.set_major_formatter(mtick.StrMethodFormatter('${x:,.0f}'))
 st.pyplot(fig2, use_container_width=False)
 
-st.dataframe(df, use_container_width=True)
+#st.dataframe(df, use_container_width=True)
