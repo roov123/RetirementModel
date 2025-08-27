@@ -23,7 +23,7 @@ df, ann_rate = simulate_retirement(starting_balance=starting_balance, retire_age
                                    singles=single, include_age_pension=include_pension)
 
 st.title("Retirement Income by Age")
-st.caption(f"Annuity payout rate: {ann_rate:.2%} of premium per year (real).")
+#st.caption(f"Annuity payout rate: {ann_rate:.2%} of premium per year (real).")
 
 # Stacked bars of income components
 fig, ax = plt.subplots(figsize=(7,3))
@@ -51,6 +51,6 @@ fig2, ax2 = plt.subplots(figsize=(7,3))
 ax2.plot(df['age'], df['abp_balance_end'])
 ax2.set_xlabel("Age")
 ax2.set_ylabel("ABP balance at year end ($ real)")
-st.pyplot(fig2)
+st.pyplot(fig2, use_container_width=False)
 
 st.dataframe(df, use_container_width=True)
